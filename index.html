@@ -1,20 +1,9 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My Blog bitch</title>
-    </head>
-    <body>
-        <h1>Welcome to my blog</h1>
+---
+layout: layout.liquid
+pageTitle: Welcome to my blog
+---
+{% for post in collections.posts %}
+    <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
 
-        
-    <h2><a href="/posts/blog-post/">This is my title bitch</a></h2>
-    <em>2021-03-29</em>
-
-    <h2><a href="/posts/blog-post-2/">This is my other bitch title</a></h2>
-    <em>2021-03-29</em>
-
-
-
-    </body>
-</html>
