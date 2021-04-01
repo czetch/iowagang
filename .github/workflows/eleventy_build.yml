@@ -25,5 +25,5 @@ jobs:
     - name: copy file
       uses: canastro/copy-file-action@master
       with:
-        source: "CNAME.txt"
+        source: "CNAME"
         target: gh-pages
