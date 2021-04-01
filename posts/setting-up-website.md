@@ -7,7 +7,7 @@ Recently, IOWAGANG was pouring over friends' web blogs when we decided that the 
 
 Note: All of the resources mentioned are free, except for the optional custom domain name.
 
-## Setting up a static-site generator
+## Using a static-site generator
 
 There are a lot of ways to build a website. But for a simple, mainly text-oriented site, using a static-site generator is the way to go. These generators take in some Markdown files and return a static HTML, CSS, or JS file that can be directly uploaded onto the web.
 
