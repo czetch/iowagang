@@ -1,5 +1,4 @@
 name: Eleventy Build
-
 on: [push]
 
 jobs:
@@ -16,6 +15,5 @@ jobs:
           PUBLISH_DIR: _site 
           PUBLISH_BRANCH: gh-pages
           DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-      - name: Copy CNAME
-        run: git checkout gh-pages
-        run: git checkout building CNAME
+          cname: iowagang.com
+
