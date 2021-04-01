@@ -16,3 +16,10 @@ jobs:
           PUBLISH_DIR: _site 
           PUBLISH_BRANCH: gh-pages
           DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      
+      - uses: actions/checkout@master
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "CNAME"
+          target: gh-pages
